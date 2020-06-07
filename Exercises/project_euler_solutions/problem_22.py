@@ -1,4 +1,5 @@
 """
+problem 22
 Using names.txt (right click and 'Save Link/Target As...'),
 a 46K text file containing over five-thousand first names,
 begin by sorting it into alphabetical order. Then working
@@ -47,17 +48,17 @@ list_name[0].sort()
 
 def product():
     st = 0
-    
+
     for k in range(len(list_name[0])):
         su = sum_values(list_name[0][k])
         position = k+1
         st += position*su
     return st
-        
+
 def sum_values(letter):
     ls = list(letter)
     s = 0
-    
+
     for k in ls:
         s += al[k]
     return s
@@ -65,10 +66,4 @@ def sum_values(letter):
 # RUN
 #su = sum_values("COLIN")
 #print("{}*{}={}".format("3",su, 3*su))
-print(product())   
-
-
-
-
-
-
+print(product())
