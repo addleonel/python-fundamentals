@@ -16,6 +16,8 @@ $       - End of a String
 [^ ]    - Matches Characters NOT in brackets
 |       - Either Or
 ( )     - Group
+(?P<name>...) - Group with name ... any characters
+(?:...) - Group non-capturing  ... any characters
 
 Quantifiers:
 *       - 0 or More
