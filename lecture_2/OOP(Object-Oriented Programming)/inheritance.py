@@ -50,7 +50,6 @@ class Vvapor(Vehiculo):
                                                                 self.our_description))
 
 
-
 # this is other subclass
 class Bicielectrica(Velectricos, Vehiculo): # preferencia para 'Velectricos'
     def __init__(self, marca, modelo, bateria, fuente_de_energia, ruedas):
@@ -63,8 +62,6 @@ class Bicielectrica(Velectricos, Vehiculo): # preferencia para 'Velectricos'
                                                                          self.bateria,
                                                                          self.fuente_de_energia,
                                                                          self.ruedas))
-
-
 
 
 # out of the class

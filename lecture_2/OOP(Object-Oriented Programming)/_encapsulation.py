@@ -1,58 +1,48 @@
-# METODOS Y ATRIBUTOS DÉBILES PRIVADOS UTILIZAN "_" al inico de su nombre
-# CONOCIDO COMO 'AMBITO PROTEGIDO'
-#
-#
+# PRIVATE WEAK ATTRIBUTES AND METHODS
+# USE "_" at the beginning of their name KNOWN AS 'PROTECTED AREA'
+# we can access them from a subclass just in the same module
+# We cannot access them from another module when importing the class
+
 import math
 
 class Client:
-    _codigo = 2343
-
-
-
-person = Client()
-
-print(person._codigo)
-print(Client._codigo)
-
-
-# ---------------------------------------------------------------------
+    _code = 2343
 
 class Convert:
-
-    # -----------------------------------------------
-    # NECESITA DE UN OBJETO O INSTANCIAR (SE UTILIZA self)
-    
+    # need an object or instance (self is used)
     def __init__(self):
+        # you can use on attributes.
         self._to_radian = math.pi/180
-        self._to_sexage = 180/math.pi
+        self._to_grades = 180/math.pi
 
     def convert_to_radian(self, value):
         value_converted = value*self._to_radian
         self._printvalue(value_converted)
 
-    def convert_to_sexage(self, value):
-        value_converted = value*self._to_sexage
+    def convert_to_grades(self, value):
+        value_converted = value*self._to_grades
         self._printvalue(value_converted)
 
+    # you can use on method.
     def _printvalue(self, value):
         print("Result = {}".format(value))
-    # ----------------------------------------------
 
-    # ----------------------------------------------
-    # NO REQUIERE DE UN OBJETO O INSTANCIA (NO UTILIZA self)
+class Con(Convert):
+    pass
 
-    def add(x, y):
-        print(x + y)
 
-    # ----------------------------------------------
+person = Client()
+print(person._code)  # with an object
+print(Client._code)  # with the class
 
-num = Convert() # self es el valor de la instancia
-# necesita de un objeto
+num = Convert()  # self is the value of the instance
+# need an object
 num.convert_to_radian(30)
-num.convert_to_sexage(3.1416)
+num.convert_to_grades(3.1416)
+# you can access to methods and attributes just with its name
 num._printvalue(200)
 print(num._to_radian)
-print(num._to_sexage)
+print(num._to_grades)
 
-# no necesita de un objeto
-Convert.add(2, 5)
+c = Con()
+c._printvalue(34)  # you can access methods and attributes from a subclass just in this module

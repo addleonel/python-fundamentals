@@ -1,4 +1,5 @@
-# I'm going to use @classmethod and @staticmethod
+# class methods and static methods
+
 import math
 class Alumno:
     university = "MIT"
