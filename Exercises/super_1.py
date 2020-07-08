@@ -1,4 +1,5 @@
-# I'm going to use the super() 
+
+# other example of multiple Inheritances
 class Editorial:
     def __init__(self, name_e, address, phone, email):
         self.name_e = name_e
@@ -50,7 +51,6 @@ class Libro(Editorial, Author):
         print(Author.__str__(self))
         print(Libro.__str__(self))
         
-
 
 libro_1 = Libro("Matematica", "Prohibida reproduccion parcial", 
                 "978-612-45216-2-1", 1000, "GEMAR", "AV. Rio Vilcanota 168. Ate. Lima 03",

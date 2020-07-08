@@ -1,4 +1,4 @@
-# I'm going to use overloading methods
+# I'm going to use Dunder or magic methods in Python
 import math
 class Vector:
     def __init__(self, x, y, z):

@@ -19,7 +19,6 @@ class Truck(Vehicle):
     def __init__(self, price, color, tires):
         super(Truck, self).__init__(price, color)
         self.tires = tires
-    
 
     def beep(self):
         print("honk honk")
@@ -31,3 +30,13 @@ class Car(Vehicle):
 
     def beep(self):
         print("Beep beep")
+
+
+def do_beep(vehicle):
+    vehicle.beep()
+
+
+truck1 = Truck('2000', 'red', 'some')
+car1 = Car('4000', 'blue', 'some')
+do_beep(truck1)
+do_beep(car1)
