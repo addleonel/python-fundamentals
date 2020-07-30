@@ -1,8 +1,8 @@
-# I'm goint to practice "if" Statement
+# I'm going to practice "if" Statement
 
 # first example in a function
 
-def ifStatement_FIRST():
+def ifStatementFirst():
     num = float(input("select a number: "))
     # print from zero to number selected
     for iterator in range(0, int(num) + 1, 1):
@@ -52,34 +52,27 @@ def ifStatement_FIRST():
         print("The number is Zero")
 
 
-def prueba(num):
-    for i in range(1, 100):
-        if num % i == 0:
-            print(i, end=" ")
-
-
 # function for print a line and make line break
-def printLine(numberScript_PUT_INTEGER, numberLineBreak__PUT_INTEGER):
+def printLine(number_script_put_integer, number_line_break_put_integer):
 
-    # this is for numberScript_PUT_INTEGER
+    # this is for number_script_put_integer
     num = 12
 
-    if numberScript_PUT_INTEGER > 0:
-        for i in range(numberScript_PUT_INTEGER):
+    if number_script_put_integer > 0:
+        for i in range(number_script_put_integer):
             print("-", end="")  # <end=""> is for print in the same line
         print()
-    elif numberScript_PUT_INTEGER == 0:
+    elif number_script_put_integer == 0:
         # the 'pass' statement make nothing
-        # En cambio pass simplemente no hace nada y pasa a la siguiente instrucción
         pass
     else:
         print(num / 0)
 
-    # this is for numberLineBreak__PUT_INTEGER
-    if numberLineBreak__PUT_INTEGER > 0:
-        for j in range(numberLineBreak__PUT_INTEGER):
+    # this is for number_line_break_put_integer
+    if number_line_break_put_integer > 0:
+        for j in range(number_line_break_put_integer):
             print()
-    elif numberLineBreak__PUT_INTEGER == 0:
+    elif number_line_break_put_integer == 0:
 
         pass
     else:
@@ -87,13 +80,12 @@ def printLine(numberScript_PUT_INTEGER, numberLineBreak__PUT_INTEGER):
 
 
 # EXAMPLES ABOUT the method 'printLine()'
-# printLine(12,-2)
-# print("hello")
-# printLine(0,0)
-# printLine(100,1)
-# print("other text")
+# printLine(12, -2)
+printLine(0, 0)
+print()
+printLine(100, 1)
 
 # PUT THE RESULT OF METHODS
-# ifStatement_FIRST()
+ifStatementFirst()
 
 

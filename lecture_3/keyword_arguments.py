@@ -1,40 +1,39 @@
 # I'm going to use the keyword arguments in a function
 
-def temperatures(value_INPUT='input a temperature in celsius:',
-                 conti='Do you want to continue?(y/n):'):
+def temperatures(value_input='input a temperature in celsius:', conti='Do you want to continue?(y/n):'):
     # calculus
     while True:
-        celsius = validation_INPUT_NUMBER(value_INPUT)
-        kelvin = changeto_KEVIN(celsius)
-        fahrenheit = changeto_FAHRENHEIT(celsius)
+        celsius = validation_input_number(value_input)
+        kelvin = change_to_kelvin(celsius)
+        fahrenheit = change_to_fahrenheit(celsius)
         print("CELSIUS:", celsius)
         print("KELVIN:", kelvin)
         print("FAHRENHEIT:", fahrenheit)
-        question = validation_INPUT_STRING(conti)
+        question = validation_input_string(conti)
         if question in ("y", "yes", "ys", "yep"):
             continue
         elif question in ("n", "no", "not", "nop"):
             break
 
 
-def changeto_KEVIN(value):
+def change_to_kelvin(value):
     return value + 273.15
 
 
-def changeto_FAHRENHEIT(value):
+def change_to_fahrenheit(value):
     return 9 / 5 * value + 32
 
 
-def validation_INPUT_NUMBER(message):
+def validation_input_number(message):
     while True:
         try:
             message = float(input(message))
             return message
         except ValueError:
-            print("ingresa un numero")
+            print("Type a number")
 
 
-def validation_INPUT_INT(message):
+def validation_input_int(message):
     while True:
         try:
             value = int(input(message))
@@ -43,7 +42,7 @@ def validation_INPUT_INT(message):
             print("just integer number: ")
 
 
-def validation_INPUT_STRING(message):
+def validation_input_string(message):
     while True:
         mess = input(message)
         if mess in ("y", "yes", "ys", "yep", "n", "no", "not", "nop"):
@@ -53,8 +52,7 @@ def validation_INPUT_STRING(message):
             continue
 
 
-# ------------------------------------------------------------
-def usingkeywordsarguments_FIRST(simple_argument, *args, **kwargs):
+def usingKeywordsArgumentsFirst(simple_argument, *args, **kwargs):
     print("this is a simple argument:", simple_argument)
     print("this is arguments using  *args:")
     for argument in args:
@@ -64,47 +62,47 @@ def usingkeywordsarguments_FIRST(simple_argument, *args, **kwargs):
         print(kw, ":", kwargs[kw], end=", ")
 
 
-# -------------------------------------------------------------
-# I'm going to use the arbitraty argument list
-def usingkeywordsarguments_SECOND(*args):
+# I'm going to use the arbitrary argument list
+def usingKeywordsArgumentsSecond(*args):
     print(*args, sep="-")
 
 
-def usingkeywordsarguments_THIRD():
-    list_MESSAGES = []
-    number_INPUT = validation_INPUT_INT("number of inputs: ")
-    for iterator in range(number_INPUT):
+def usingKeywordsArgumentsThird():
+    list_messages = []
+    number_input = validation_input_int("number of inputs: ")
+    for iterator in range(number_input):
         mess = input("print any message: ")
-        list_MESSAGES.append(mess)
+        list_messages.append(mess)
     # just put '*' before the list and it will be a string
-    print(*list_MESSAGES, sep="\n")
+    print(*list_messages, sep="\n")
 
 
-def usingkeywordsarguments_FOURTH():
+def usingKeywordsArgumentsFourth():
     # create a dictionary
-    dictionary_ONE = {
+    dictionary_one = {
         "name": "Galileo",
         "surname": "Galilei",
         "age": 76,
         "country": "Italy",
     }
-    for kw in dictionary_ONE:
-        print(kw, ":", dictionary_ONE[kw])
+    for kw in dictionary_one:
+        print(kw, ":", dictionary_one[kw])
+
 
 # RESULT
 temperatures()
-usingkeywordsarguments_FIRST("simple argument",
-                             "argument one",
-                             "argument two ",
-                             "argument three",
-                             "argument four",
-                             kw_1="value_1",
-                             kw_2="value_2",
-                             kw_3="value_3",
-                             kw_4="value_4",
-                             kw_5="value_5",
-                             kw_6="value_6",
+usingKeywordsArgumentsFirst("simple argument",
+                            "argument one",
+                            "argument two ",
+                            "argument three",
+                            "argument four",
+                            kw_1="value_1",
+                            kw_2="value_2",
+                            kw_3="value_3",
+                            kw_4="value_4",
+                            kw_5="value_5",
+                            kw_6="value_6",
                              )
-usingkeywordsarguments_SECOND(1, 2, 3, 4, 5, 6)
-usingkeywordsarguments_THIRD()
-usingkeywordsarguments_FOURTH()
+usingKeywordsArgumentsSecond(1, 2, 3, 4, 5, 6)
+usingKeywordsArgumentsThird()
+usingKeywordsArgumentsFourth()
