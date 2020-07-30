@@ -1,13 +1,14 @@
-# una funcion 'a' recibe como parametro una funcion 'b' y retorna una funcion 'c'  
-#a(b) ->c
+# a function 'a' receives as a parameter a function 'b' and returns a function 'c'
+# a(b) ->c
 # 'a' is the decorator
-# 'b' function to decorate (funcion para decorar)
-# 'c' decora 'b'
-# -------------------------------------------------
-def function_a(function_b):
+# 'b' function to decorate
+# 'c' decor 'b'
+import time
+
+def function_a(func):
 
     def function_c(*args, **kwargs):
-        return function_b(*args, **kwargs)
+        return func(*args, **kwargs)
 
     return function_c
 
@@ -16,8 +17,7 @@ def function_b(value1, value2, value3):
     pass
 # run function decorated
 # function_b()
-# --------------------------------------------------
-import time
+
 def decorator(func):
     
     def wrap(*args, **kwargs):
@@ -27,14 +27,15 @@ def decorator(func):
         
     return wrap
 
-@decorator
-def sum(a, b):
-    #time.sleep(3)
-    return a + b
-value_returned = sum(2,3) # time.time()-start = wrap
-print(value_returned)
 
-# ------------------------------------------------------------
+@decorator
+def sum_(a, b):
+    # time.sleep(3)
+    return a + b
+
+
+value_returned = sum_(2,3)  # time.time()-start = wrap
+print(value_returned)
 
 
 

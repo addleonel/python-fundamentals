@@ -1,39 +1,38 @@
-# I'm going to use deafult argument values in function
+# I'm going to use default argument values in function
 
 
-# introduce_DATA
-def enter_NAME():
+# introduce data
+def enter_name():
     name = input("Your name: ")
     return name
 
 
-def enter_SURNAME():
+def enter_surname():
     surname = input("your surname: ")
     return surname
 
 
-def enter_AGE():
+def enter_age():
     age = int(input("your age: "))
     return age
 
 
-def enter_GENDER():
+def enter_gender():
     gender = input("your gender: ")
     return gender
 
 
-def enter_ADDRESS():
+def enter_address():
     address = input("your address: ")
     return address
 
 
-def enter_TELEPHONENUMBER():
+def enter_telephone_number():
     phone = input("your telephone number: ")
-    return
+    return phone
 
 
-def defaultArgumentValues_FIRST(name=enter_NAME(), surname=enter_SURNAME(), age=enter_AGE(),
-                                gender=enter_GENDER(), address=enter_ADDRESS(), phone=enter_TELEPHONENUMBER()):
+def defaultArgumentValues(name=None, surname=None, age=None, gender=None, address=None, phone=None):
     print("THIS IS ALL YOUR INFORMATION: ")
     print("name:", name, "\nsurname:", surname, "\nage:", age, "\ngender:", gender, "\naddress:", address,
           "\ntelephone number:", phone)
@@ -58,19 +57,24 @@ def next_(valor, lst=[]):
     return lst
 
 
-def next_SECOND(valor, lst=None):
+def next_second(valor, lst=None):
     if lst is None:
         lst = []
     lst.append(valor)
     return lst
 
 
-# print(next_(1))
-# print(next_(2))
-# print(next_(123))
-next_SECOND(12)
-
 # ALL RESULT
-# defaultArgumentValues_FIRST()
-# tuple = (12, 12, 13, "reminder", "retry", "opportunity")
+
+print(next_(1))
+print(next_(2))
+print(next_(123))
+next_second(12)
+input("Enter to continue...")
+defaultArgumentValues()
+input("Enter to continue...")
+defaultArgumentValues(enter_name(), enter_surname(), enter_age(), enter_gender(),
+                      enter_address(), enter_telephone_number())
+input("Enter to continue...")
 input_ok("Write a yes or no: ")
+input("Enter to continue...")

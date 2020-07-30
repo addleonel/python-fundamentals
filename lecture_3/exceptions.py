@@ -25,10 +25,6 @@
 #   raise SyntaxError
 # except Exception:
 #   print("hello there is a error") 
-  
-
-
-
 
 # for k in [NameError, ValueError, SyntaxError]:
 #   try:
@@ -55,6 +51,7 @@
 #     raise
 
 # USING try ... except ... else ... finally
+
 for k in [1.0,"two", 3.0]:
     try:
         i = int(k)
@@ -66,35 +63,32 @@ for k in [1.0,"two", 3.0]:
         print("completed process\n"+"="*30)
 
 
+# If there is a finally clause present, the finally clause will run as the last task
+# before try the instruction complete. The finally clause is executed
+# regardless of whether or not the try statement throws an exception. The following
+# Points discuss more complex cases when an exception occurs:
 
-"""
-Si hay una finallycláusula presente, la finally cláusula se ejecutará como la última tarea 
-antes de try que se complete la instrucción. La finallycláusula se ejecuta 
-independientemente de si la trydeclaración produce o no una excepción. Los siguientes 
-puntos discuten casos más complejos cuando ocurre una excepción:
+# 1- If an exception occurs during the execution of the try clause,
+#   the exception can be handled by an except clause.
+#   If the except clause does not handle the exception,
+#   the exception is rebuilt after the finally clause has been executed.
+# 2- An exception could occur during the execution of an except or the clause.
+#   Again, the exception is rebuilt after finally the clause has been executed.
 
-1- Si se produce una excepción durante la ejecución de la try cláusula, 
-  la excepción puede ser manejada por una except cláusula. 
-  Si la except cláusula no maneja la excepción, 
-  la excepción se vuelve a generar después de que la finally cláusula se haya ejecutado.
+# 3- If the try statement reaches a break, continue or return communicated,
+#   the finally clause will be executed just before the break, continueo return the declaration execution.
 
-2- Una excepción podría ocurrir durante la ejecución de una except o elsecláusula. 
-  Nuevamente, la excepción se vuelve a generar después de finallyque se haya ejecutado la cláusula.
+# 4- If a finally clause includes a return declaration, the returned value will be the one of
+#   the declaration of the finally clause return, not the value of the declaration of the try clause return.
 
-3- Si la trydeclaración llega a una break, continueo returncomunicado, 
-  la finallycláusula se ejecutará justo antes del break, continueo return la ejecución de declaración.
-
-4- Si una finallycláusula incluye una return declaración, el valor devuelto será el de 
-  la declaración de la finallycláusula return, no el valor de la declaración de la trycláusula return.
-"""
-1-
+# 1-
 # try:
 #   raise NameError("Hi error")
 # except SyntaxError:
 #   print("error SyntaxError")
 # finally:
 #   print("FINISHED")
-3-
+# 3-
 # n = 0
 # while n < 10:
 #   try:
@@ -107,7 +101,7 @@ puntos discuten casos más complejos cuando ocurre una excepción:
 #   finally:
 #     print("finished")
 #   n += 1
-4- 
+# 4-
 # def example():
 #   try:
 #     return True
@@ -128,6 +122,7 @@ def divide(x, y):
         print("the result is: {}".format(round(r, 2)))
     finally:
         print("completed process\n" + "="*30)
+
 
 divide(2, 3)
 divide(2, 0)

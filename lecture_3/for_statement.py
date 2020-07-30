@@ -3,25 +3,25 @@
 import random
 
 
-def forStatement_FIRST():
+def forStatementFirst():
     # print the elements from a list
-    list_FIRST = ['one', 'two', 'three', 'four', 'five']
-    for iterator in list_FIRST:
+    list_first = ['one', 'two', 'three', 'four', 'five']
+    for iterator in list_first:
         # iterator take the element value
         # so 'iterator' is equal to, for example, 'one'
         print(iterator, end=", ")
         print("the number of letter: ", str(len(iterator)))
 
 
-def forStatement_SECOND():
-    list_SECOND = ['one', 'two', 'three', 'four', 'five']
-    # print equal to 'forStatement_FIRST but, with other method
-    for iterator in range(len(list_SECOND)):
-        print(list_SECOND[iterator], end=", ")
-        print("the number of letter: ", len(list_SECOND[iterator]))
+def forStatementSecond():
+    list_second = ['one', 'two', 'three', 'four', 'five']
+    # print equal to 'forStatementFirst but, with other method
+    for iterator in range(len(list_second)):
+        print(list_second[iterator], end=", ")
+        print("the number of letter: ", len(list_second[iterator]))
 
 
-def forStatement_THIRD():
+def forStatementThird():
     # I'm going to print ranges
     for i in range(2, 20, 4):
         print(i, end=" ")
@@ -40,20 +40,12 @@ def forStatement_THIRD():
     print()
     for i in range(-10, -100, -10):
         print(i, end=" ")
-    # Make a list with ranges
-    # for example
-    print()
-    list_WITH_RANGE_FIRST= list(range(12, 28, 2))
-    print(list_WITH_RANGE_FIRST)
-    list_WITH_RANGE_SECOND = list(range(20, 40, 7))
-    print(list_WITH_RANGE_SECOND)
-    list_WITH_RANGE_THIRD = list(range(1,10+1))
-    print(list_WITH_RANGE_THIRD)
+    print("\r")
 
-def forStatement_FOURTH():
+def forStatementFourth():
     # exercise with a matrix
     # multiply two matrices using RANDOM NUMBERS
-    matrix_FIRST = [
+    matrix_1 = [
         # using random numbers
         [random.randint(1, 10), random.randint(-1, 2), random.randint(3, 20)],
         [2, 5, 7],
@@ -61,7 +53,7 @@ def forStatement_FOURTH():
 
     ]
 
-    matrix_SECOND = [
+    matrix_2 = [
         # using random numbers
         [random.randint(1, 10), random.randint(-1, 2), random.randint(3, 20)],
         [2, 5, 7],
@@ -69,48 +61,34 @@ def forStatement_FOURTH():
 
     ]
 
-    matrix_RESULT = [
+    matrix_result = [
         [0, 0, 0],
         [0, 0, 0],
         [0, 0, 0],
     ]
 
-    for i in range(len(matrix_FIRST)):
-        for j in range(len(matrix_SECOND[0])):
-            for k in range(len(matrix_FIRST[0])):
-                matrix_RESULT[i][j] += matrix_FIRST[i][k]*matrix_SECOND[k][j]
+    for i in range(len(matrix_1)):
+        for j in range(len(matrix_2[0])):
+            for k in range(len(matrix_1[0])):
+                matrix_result[i][j] += matrix_1[i][k]*matrix_2[k][j]
 
     # print all matrices
-    for value in matrix_FIRST:
+    for value in matrix_1:
         print(value)
     print("*")
-    for value in matrix_SECOND:
+    for value in matrix_2:
         print(value)
     print("=")
-    for value in matrix_RESULT:
+    for value in matrix_result:
         print(value)
-
-
-# METHODS COMPLEMENTS
-def proofMethod():
-    list_PROOF = ['one', 'two', 'three', 'four', 'five']
-    for iterator in range(len(list_PROOF)):
-        print(list_PROOF[iterator])
-    # for i in range(10):
-    #    print(i)
-
-
-def printLine():
-    print("--------------------------------------------------")
 
 
 # RESULT ABOUT THE METHODS
+forStatementFirst()
+print("-"*40)
+forStatementSecond()
+print("-"*40)
+forStatementThird()
+print("-"*40)
+forStatementFourth()
 
-forStatement_FIRST()
-printLine()
-forStatement_SECOND()
-printLine()
-forStatement_THIRD()
-printLine()
-forStatement_FOURTH()
-# proofMethod()

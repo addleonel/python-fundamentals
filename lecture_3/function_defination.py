@@ -1,27 +1,26 @@
 # I'm going to use functions
-# import 'printLine' from 'ifStatement'
-from fundamentals.Class_3_MoreControlFlowTools.ifStatement import printLine
+
 import math
 
 
 # this is a function
-def fibonacci(param_NUMBER):
+def fibonacci(param_number):
     # in this method i'm going to print fibonacci number
     # using the parameter of the function
     a, b = 0, 1
-    while a < param_NUMBER:
+    while a < param_number:
         a, b = b, a + b
         print(a, end=" ")
 
 
-def fibonacci_SECOND(param_NUMBER):
+def fibonacci_second(param_number):
     # fibonacci numbers in a list
-    list_FIBONACCI = []
+    list_fibonacci = []
     a, b = 0, 1
-    while a < param_NUMBER:
+    while a < param_number:
         a, b = b, a + b
-        list_FIBONACCI.append(a)
-    print(list_FIBONACCI)
+        list_fibonacci.append(a)
+    print(list_fibonacci)
 
 
 # functions using 'math' modules
@@ -31,35 +30,36 @@ def solvingMathProblem(number_in_sexagesimal):
     print(function)
 
 
-def proofmethodMultiply():
-    list_PROOF = [1, 1, 0]
-    list_RESULT = []
-    modules_RESULT = 0
-    for i in list_PROOF:
+def proofMethodMultiply():
+    list_proof = [1, 1, 0]
+    list_result = []
+    modules_result = 0
+    for i in list_proof:
         result_i = i*3
-        list_RESULT.append(result_i)
-    # module from 'list_RESULT'
-    modules_RESULT = math.pow(math.pow(list_RESULT[0], 2)+ math.pow(list_RESULT[1], 2)+math.pow(list_RESULT[2], 2), 0.5)
-    print(list_RESULT)
-    print(modules_RESULT)
+        list_result.append(result_i)
+    # module from 'list_result'
+    modules_result = math.pow(math.pow(list_result[0], 2)+math.pow(list_result[1], 2)+math.pow(list_result[2], 2), 0.5)
+    print(list_result)
+    print(modules_result)
 
 def proofMethodAdd():
-    list_PROOF_FIRST = [1, 2, 6]
-    list_PROOF_SECOND = [2, -4, 7]
-    list_PROOF_THIRD = [1, -3, 4]
-    list_PROOF_RESULT = []
-    for i in range(len(list_PROOF_FIRST)):
-        list_PROOF_RESULT.append(list_PROOF_FIRST[i]+list_PROOF_SECOND[i] + list_PROOF_THIRD[i])
+    list_proof_first = [1, 2, 6]
+    list_proof_second = [2, -4, 7]
+    list_proof_third = [1, -3, 4]
+    list_proof_result = []
+    for i in range(len(list_proof_first)):
+        list_proof_result.append(list_proof_first[i]+list_proof_second[i] + list_proof_third[i])
 
-    print(list_PROOF_RESULT)
+    print(list_proof_result)
 
-printLine(30, 0)
+
+print("-"*30)
 fibonacci(10)
-printLine(30, 0)
-fibonacci_SECOND(20)
-printLine(40, 0)
+print("-"*30)
+fibonacci_second(20)
+print("-"*40)
 solvingMathProblem(60)
-printLine(30, 0)
-proofmethodMultiply()
-printLine(30, 0)
+print("-"*30)
+proofMethodMultiply()
+print("-"*30)
 proofMethodAdd()
