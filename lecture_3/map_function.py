@@ -2,7 +2,7 @@
 # 'map' mapped all element that is in a iterable such as lists [], tuples (), sets {}  
 # REQUIREMENT
 # require a function, our case 'example'
-# require a list, in our caee 'my_list'
+# require a list, in our case 'my_list'
 # SYNTAX
 # map(function, sequence[, sequence, ...]) then to convert to list
 
@@ -10,6 +10,8 @@
 # create a function that return some value
 def example(value):
     return value*2
+
+
 # ->second step
 # create a list
 my_list = [1, 3, 4, 5, 6, 7, 8]
@@ -43,7 +45,7 @@ a = [1, 3, 5, 7, 8]
 b = [4, 6, 7, 9]
 c = [3, 4, 5, 7, 5]
 print(list(map(lambda x, y, z: x*2 + y*3 + z*4, a, b, c)))
-        
+
 
 
 

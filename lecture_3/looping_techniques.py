@@ -1,6 +1,6 @@
-# I'm going to use some looping tecniques
+# I'm going to use some looping techniques
 
-dic = {'name':'Newt', 'surname': 'Evanoc', 'age':'29'}
+dic = {'name': 'Newt', 'surname': 'Evanoc', 'age': '29'}
 
 for k, v in dic.items():
     print('{0}: {1}'.format(k, v))
@@ -29,10 +29,7 @@ for i in sorted(nums):
     
 for i in sorted(set(basket)):
     print(i)
-# some of filter and lambda
-orange_filter = list(filter(lambda x: x == 'orange', basket))
-print(orange_filter)
-print(len(orange_filter))
+
 
 
 
