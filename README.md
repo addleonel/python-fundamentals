@@ -34,7 +34,9 @@ print("Hello World")
 ```
 
 #### Variables
-[`number = 10  # This a variable`](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/variable.py)
+````python
+number = 10  # This a variable
+````
 ````python
 PI = 3.14159  # This is a constant
 ````
@@ -44,12 +46,12 @@ Python has the following data types built-in by default, in these categories:
 
 Category | Data type
 ----------|----------
-Text Type |	str
-Numeric Types |int, float, complex
-Boolean Type|	bool
-Sequence Types| list, tuple, range
-Mapping Type|	dict
-Set Types|	set, frozenset
+Text Type |	[str](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py)
+Numeric Types |[int](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py), [float](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py), complex
+Boolean Type|	[bool](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py)
+Sequence Types| [list](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py), [tuple](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py), range
+Mapping Type|	[dict](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py)
+Set Types|	[set](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/data_type.py), frozenset
 Binary Types|	bytes, bytearray, memoryview
 
 Primitive data structures | Non-primitive data structures
