@@ -17,3 +17,7 @@ list_1 = [12,23,23,12]
 number, name = 12,"Tim"
 print(number)
 print(name)
+
+# Constant
+GRAVITY = 9.8
+print(GRAVITY)
