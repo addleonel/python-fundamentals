@@ -34,9 +34,7 @@ print("Hello World")
 ```
 
 #### Variables
-````python
-number = 10  # This a variable
-````
+[`number = 10  # This a variable`](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/variable.py)
 ````python
 PI = 3.14159  # This is a constant
 ````
