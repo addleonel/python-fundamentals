@@ -67,14 +67,26 @@ length = len(my_list)  # Length of the list
 #### List Methods
 Method | Description
 ----------------|--------------
-|**append**(x) | Add an item to the end of the list. Equivalent to `a[len(a):] = [x]`.0
-|**insert**(iterable) | Insert an item at a given position. The first argument is the index of the element before which to insert, so `a.insert(0, x)` inserts at the front of the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.
+|**append**(x) | Add an item to the end of the list. Equivalent to `a[len(a):] = [x]`.0|
+|**insert**(iterable) | Insert an item at a given position. The first argument is the index of the element before which to insert, so `a.insert(0, x)` inserts at the front of the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.|
 |**extend**(i, x) | Extend the list by appending all the items from the iterable. Equivalent to `a[len(a):] = iterable`.
-|**remove**(x) | Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.
-|**pop**(**[**i**]**) | Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list.
-|**clear**() | Remove all items from the list. Equivalent to `del a[:]`.
-|**index**(x **[**, start **[**, end**]** **]**) | Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there is no such item.
-|**count**(x) | Return the number of times x appears in the list.
-|**sort**(*, key=None, reverse=False)| Sort the items of the list in place.
-|**reverse**() | Reverse the items of the list in place. 
-|**copy**() | Return a shadow copy of the list. Equivalent to `a[:]`.
+|**remove**(x) | Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.|
+|**pop**(**[**i**]**) | Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list.|
+|**clear**() | Remove all items from the list. Equivalent to `del a[:]`.|
+|**index**(x **[**, start **[**, end**]** **]**) | Return zero-based index in the list of the first item whose value is equal to x. Raises a `ValueError` if there is no such item.|
+|**count**(x) | Return the number of times x appears in the list.|
+|**sort**(\*, key=None, reverse=False)| Sort the items of the list in place.|
+|**reverse**() | Reverse the items of the list in place. |
+|**copy**() | Return a shadow copy of the list. Equivalent to `a[:]`.|
+
+#### Tuples
+````python
+my_tuple = (3, 5, 6, 3, 7)
+
+````
+
+#### Tuple methods
+Method | Description
+--------- | ---------------
+|**count**(x)| Return the number of items x appers in the tuple.|
+|**index**(x **[**, start **[**, end **]** **]**) | Return zero-based index in the tuple of the first item whose value is equal to x. Raises a `ValueError` if there is no such item.|
