@@ -73,7 +73,7 @@ Method | Description
 |**remove**(x) | Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.|
 |**pop**(**[**i**]**) | Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list.|
 |**clear**() | Remove all items from the list. Equivalent to `del a[:]`.|
-|**index**(x **[**, start **[**, end**]** **]**) | Return zero-based index in the list of the first item whose value is equal to x. Raises a `ValueError` if there is no such item.|
+|**index**(x **[**, start **[**, end **]** **]**) | Return zero-based index in the list of the first item whose value is equal to x. Raises a `ValueError` if there is no such item.|
 |**count**(x) | Return the number of times x appears in the list.|
 |**sort**(\*, key=None, reverse=False)| Sort the items of the list in place.|
 |**reverse**() | Reverse the items of the list in place. |
