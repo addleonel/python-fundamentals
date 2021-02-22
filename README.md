@@ -90,3 +90,16 @@ Method | Description
 --------- | ---------------
 |**count**(x)| Return the number of items x appers in the tuple.|
 |**index**(x **[**, start **[**, end **]** **]**) | Return zero-based index in the tuple of the first item whose value is equal to x. Raises a `ValueError` if there is no such item.|
+
+#### Sets
+```python
+my_set = {3, 4, 5, 6, 7, 2, 2}  # duplicate items are removed, then the set is {2, 3, 4, 5, 6, 7}
+```
+
+#### Set methods
+Method | Description
+---------|-------------------
+|**add**(x)|Adds a given element to a set. If the element is already present, it doesn't add any element. `add()` method takes a single parameter:|
+|**clear**()|Removes all elements from the set. It doesn't take any parameters.|
+|**copy**()|Returns a shallow copy of the set. It doesn't take any parameters.|
+|**pop**()|Removes an arbitrary element from the set and returns the element removed. It doesn't take any arguments.|
