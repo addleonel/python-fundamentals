@@ -70,7 +70,7 @@ Method | Description
 |**append**(x) | Add an item to the end of the list. Equivalent to `a[len(a):] = [x]`.0|
 |**insert**(iterable) | Insert an item at a given position. The first argument is the index of the element before which to insert, so `a.insert(0, x)` inserts at the front of the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.|
 |**extend**(i, x) | Extend the list by appending all the items from the iterable. Equivalent to `a[len(a):] = iterable`.
-|**remove**(x) | Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.|
+|**remove**(x) | Remove the first item from the list whose value is equal to x. It raises a `ValueError` if there is no such item.|
 |**pop**(**[**i**]**) | Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list.|
 |**clear**() | Remove all items from the list. Equivalent to `del a[:]`.|
 |**index**(x **[**, start **[**, end **]** **]**) | Return zero-based index in the list of the first item whose value is equal to x. Raises a `ValueError` if there is no such item.|
@@ -103,3 +103,4 @@ Method | Description
 |**clear**()|Removes all elements from the set. It doesn't take any parameters.|
 |**copy**()|Returns a shallow copy of the set. It doesn't take any parameters.|
 |**pop**()|Removes an arbitrary element from the set and returns the element removed. It doesn't take any arguments.|
+|**remove**(x)|Removes the specified element from the set. It takes a single element as an argument and removes it from the set.|
