@@ -104,3 +104,4 @@ Method | Description
 |**copy**()|Returns a shallow copy of the set. It doesn't take any parameters.|
 |**pop**()|Removes an arbitrary element from the set and returns the element removed. It doesn't take any arguments.|
 |**remove**(x)|Removes the specified element from the set. It takes a single element as an argument and removes it from the set.|
+|**difference**(set)|Returns the difference between two sets which is also a set. It doesn't modify original sets.|
