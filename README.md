@@ -104,5 +104,15 @@ Method | Description
 |**copy**()|Returns a shallow copy of the set. It doesn't take any parameters.|
 |**pop**()|Removes an arbitrary element from the set and returns the element removed. It doesn't take any arguments.|
 |**remove**(x)|Removes the specified element from the set. It takes a single element as an argument and removes it from the set.|
+|**discard**(x)|Takes a single element x and removes it from the set (if present).|
 |**difference**(set)|Returns the difference between two sets which is also a set. It doesn't modify original sets.|
-|**intersection**(**[** set, **[** , ... **]** **]**)|Returns a new set with elements that are common to all sets. Allows arbitrary number of arguments (sets).|
+|**difference_update**(set)|Updates the set calling `difference_update()` method with the difference of sets.|
+|**intersection**(**[** set **[** , ... **]** **]**)|Returns a new set with elements that are common to all sets. Allows arbitrary number of arguments (sets).|
+|**intersection_update**(**[** set **[** , ... **]** **]**)|Updates the set calling `intersection_update()` method with the intersection of sets.|
+|**union**(**[** set **[** , ... **]** **]**)|Returns a new set with elements from the set and all other sets (passed as an argument).|
+|**symmetric_difference**(set)|Returns the symmetric difference of two sets.|
+|**symmetric_difference_update**(set)|Finds the symmetric difference of two sets and updates the set calling it.|
+|**update**(**[** iter **[** , ... **]** **]**)|Updates the set, adding items from other iterables.|
+|**issubset**(set)|Returns `True` if all elements of a set are present in another set (passed as an argument). If not, it returns `False`.|
+|**issuperset**(set)|Return `True` if all elements of another set is present in the current set (method caller). If not, it returns `False`.|
+|**isdisjoint**(set)|Return `True` if two sets are disjoint sets. If not, it returns `False`.|
