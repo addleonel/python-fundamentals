@@ -116,3 +116,8 @@ Method | Description
 |**issubset**(set)|Returns `True` if all elements of a set are present in another set (passed as an argument). If not, it returns `False`.|
 |**issuperset**(set)|Return `True` if all elements of another set is present in the current set (method caller). If not, it returns `False`.|
 |**isdisjoint**(set)|Return `True` if two sets are disjoint sets. If not, it returns `False`.|
+
+#### Dictionaries
+```python
+my_dict = {'name': 'Leo', 'age': 22}
+```
