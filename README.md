@@ -119,7 +119,7 @@ Method | Description
 
 #### Dictionaries
 ```python
-my_dict = {'name': 'Leo', 'age': 22}
+my_dict = {'name': 'Leo', 'age': 22} # {key:value,}
 ```
 #### Dictionary methods
 |Method | Description|
