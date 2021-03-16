@@ -121,3 +121,14 @@ Method | Description
 ```python
 my_dict = {'name': 'Leo', 'age': 22}
 ```
+#### Dictionary methods
+|Method | Description|
+|--------|-----------|
+|**clear**()|Removes all items from the dictionary.|
+|**copy**()|Returns a shallow copy of the dictionary.|
+|**get**(key **[** , other **]**)|Returns the value of the `key` if this doesn't exist returns `other` that it's `None` for default.|
+|**items**()|Returns a new object of the dictionary's items in (key, value) format.|
+|**keys**()|Returns a new object of the dictionary's keys.|
+|**values**()|Returns a new object of the dictionary's values|
+|**pop**(key **[** , other **]**)|Removes the item with the `key` and returns its value or `other` if `key` is not found. If `other` is not provided and the `key` is not found, it raises `KeyError`.|
+|**popitem**()|Removes and returns an arbitrary item (key, value). Raises `KeyError` if the dictionary is empty.|
