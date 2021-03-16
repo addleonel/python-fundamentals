@@ -58,6 +58,13 @@ Primitive data structures | Non-primitive data structures
 -------------------------| -----------------------------
 Integers, Float, strings, Boolean| Arrays, Lists, Tuples, Dictionary, Sets, Files
 
+#### Built-in Data Structures
+- Strings
+- Lists
+- Dictionaries
+- Tuples
+- Sets
+
 #### Lists
 ````python
 my_list = ['First', 'Second', 'Third', True, 21, 10.5]
