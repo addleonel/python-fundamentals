@@ -141,3 +141,4 @@ my_dict = {'name': 'Leo', 'age': 22} # {key:value,}
 |**popitem**()|Removes and returns an arbitrary item (key, value). Raises `KeyError` if the dictionary is empty.|
 |**update**( **[** other **]** )|Updates the dictionary with the key/value pairs from `other`, overwriting existing keys.|
 |**fromkeys**( sequence, **[** , values **]** )|Returns a new dictionary with the given sequence of elements as the keys of the dictionary.|
+|**setdefault**(key **[** , default_value **]**)|Returns the value of a key (if the key is in dictionary). If not, it inserts key with a value to the dictionary.|
