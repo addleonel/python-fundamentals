@@ -140,3 +140,4 @@ my_dict = {'name': 'Leo', 'age': 22} # {key:value,}
 |**pop**(key **[** , other **]**)|Removes the item with the `key` and returns its value or `other` if `key` is not found. If `other` is not provided and the `key` is not found, it raises `KeyError`.|
 |**popitem**()|Removes and returns an arbitrary item (key, value). Raises `KeyError` if the dictionary is empty.|
 |**update**( **[** other **]** )|Updates the dictionary with the key/value pairs from `other`, overwriting existing keys.|
+|**fromkeys**( sequence, **[** , values **]** )|Returns a new dictionary with the given sequence of elements as the keys of the dictionary.|
