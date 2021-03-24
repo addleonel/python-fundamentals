@@ -60,10 +60,10 @@ Integers, Float, strings, Boolean| Arrays, Lists, Tuples, Dictionary, Sets, File
 
 #### Built-in Data Structures
 - Strings
-- Lists
-- Dictionaries
-- Tuples
-- Sets
+- [Lists](https://github.com/addleonel/python-fundamentals#lists)
+- [Tuples](https://github.com/addleonel/python-fundamentals#tuples)
+- [Sets](https://github.com/addleonel/python-fundamentals#sets)
+- [Dictionaries](https://github.com/addleonel/python-fundamentals#dictionaries)
 
 #### Lists
 ````python
