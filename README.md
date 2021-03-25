@@ -59,7 +59,7 @@ Primitive data structures | Non-primitive data structures
 Integers, Float, strings, Boolean| Arrays, Lists, Tuples, Dictionary, Sets, Files
 
 #### Built-in Data Structures
-- Strings
+- [Strings](https://github.com/addleonel/python-fundamentals/blob/master/lecture_1/strings.py)
 - [Lists](https://github.com/addleonel/python-fundamentals#lists)
 - [Tuples](https://github.com/addleonel/python-fundamentals#tuples)
 - [Sets](https://github.com/addleonel/python-fundamentals#sets)
