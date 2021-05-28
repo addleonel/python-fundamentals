@@ -26,16 +26,17 @@ class Student:
         print(message)
 
 
-# We need create a instance
-student = Student("Alan", "Turing", 23)
-student.print_information()
+if __name__ == '__main__':
+    # We need create a instance
+    student = Student("Alan", "Turing", 23)
+    student.print_information()
 
-input("press to continuous ...")
-# we don't need create a instance when we use class method
-# just do this
-Student.print_university()
-# we don't need create a instance when we use static method
-# just do this
-input("press to continuous ...")
+    input("press to continuous ...")
+    # we don't need create a instance when we use class method
+    # just do this
+    Student.print_university()
+    # we don't need create a instance when we use static method
+    # just do this
+    input("press to continuous ...")
 
-Student.print_message("Hello, this is a meeting message: ")
+    Student.print_message("Hello, this is a meeting message: ")

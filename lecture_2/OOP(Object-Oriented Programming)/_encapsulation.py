@@ -31,18 +31,19 @@ class Con(Convert):
     pass
 
 
-person = Client()
-print(person._code)  # with an object
-print(Client._code)  # with the class
+if __name__ == '__main__':
+    person = Client()
+    print(person._code)  # with an object
+    print(Client._code)  # with the class
 
-num = Convert()  # self is the value of the instance
-# need an object
-num.convert_to_radian(30)
-num.convert_to_grades(3.1416)
-# you can access to methods and attributes just with its name
-num._printvalue(200)
-print(num._to_radian)
-print(num._to_grades)
+    num = Convert()  # self is the value of the instance
+    # need an object
+    num.convert_to_radian(30)
+    num.convert_to_grades(3.1416)
+    # you can access to methods and attributes just with its name
+    num._printvalue(200)
+    print(num._to_radian)
+    print(num._to_grades)
 
-c = Con()
-c._printvalue(34)  # you can access methods and attributes from a subclass just in this module
+    c = Con()
+    c._printvalue(34)  # you can access methods and attributes from a subclass just in this module

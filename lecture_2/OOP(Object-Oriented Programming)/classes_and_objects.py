@@ -20,17 +20,18 @@ class Person:
         self.we = we
 
 
-tim = Person("Tim", 21, 1.75)  # tim is an object or instance
-scott = Person("Scott", 29, 1.80)  # scott is other object or instance
+if __name__ == '__main__':
+    tim = Person("Tim", 21, 1.75)  # tim is an object or instance
+    scott = Person("Scott", 29, 1.80)  # scott is other object or instance
 
-# calling to the instance method
-tim.speak()
-tim.change_age(23)
-tim.change_weight(1.77)
-tim.speak()
+    # calling to the instance method
+    tim.speak()
+    tim.change_age(23)
+    tim.change_weight(1.77)
+    tim.speak()
 
-scott.speak()
-scott.change_age(30)
-scott.change_weight(1.81)
-scott.speak()
+    scott.speak()
+    scott.change_age(30)
+    scott.change_weight(1.81)
+    scott.speak()
 

@@ -31,11 +31,12 @@ class FlightTime(Calendar, Hour):
                                                                                    self.country_to)
 
 
-# out
+if __name__ == '__main__':
+    # out
 
-flight1 = FlightTime("24/10/2019", "19:00", "Peru", "EE.UU")
-print(flight1.flight_data())
+    flight1 = FlightTime("24/10/2019", "19:00", "Peru", "EE.UU")
+    print(flight1.flight_data())
 
-date = flight1.get_date()
-hour = flight1.get_hour()
-print(date, hour)
+    date = flight1.get_date()
+    hour = flight1.get_hour()
+    print(date, hour)

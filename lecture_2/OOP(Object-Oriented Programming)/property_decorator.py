@@ -19,11 +19,12 @@ class Celsius:
         self._temperature = value
 
 
-# create an object
-human = Celsius(37)
+if __name__ == '__main__':
+    # create an object
+    human = Celsius(37)
 
-print(human.temperature)
+    print(human.temperature)
 
-print(human.to_fahrenheit())
+    print(human.to_fahrenheit())
 
-coldest_thing = Celsius(-300)
+    coldest_thing = Celsius(-300)  # This raises an ValueError

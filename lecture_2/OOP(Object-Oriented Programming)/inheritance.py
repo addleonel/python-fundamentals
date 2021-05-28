@@ -67,27 +67,28 @@ class ElectricBike(Electrical, Vehicle):  # preference for 'Electrical'
                                                                                     self.wheels))
 
 
-# out of the class
-# create a instance
-my_car_1 = Vehicle("Audi", "XM-23")
-my_car_1.show_features()
+if __name__ == '__main__':
+    # out of the class
+    # create a instance
+    my_car_1 = Vehicle("Audi", "XM-23")
+    my_car_1.show_features()
 
-print("-" * 40)
+    print("-" * 40)
 
-my_car_2 = Vehicle("Ferrari", "XVM-34")
-my_car_2.show_features()
+    my_car_2 = Vehicle("Ferrari", "XVM-34")
+    my_car_2.show_features()
 
-print("-" * 40)
+    print("-" * 40)
 
-my_car_3 = Vehicle("Toyota", "506-D")
-my_car_3.show_features()
+    my_car_3 = Vehicle("Toyota", "506-D")
+    my_car_3.show_features()
 
-print("-"*40)
+    print("-"*40)
 
-my_car_4 = Electrical("Hyundai", "34-M", "Lithium", "rechargeable")
-my_car_4.show_features()
+    my_car_4 = Electrical("Hyundai", "34-M", "Lithium", "rechargeable")
+    my_car_4.show_features()
 
-print("-"*40)
+    print("-"*40)
 
-my_car_5 = ElectricBike("suzuki", "MN-567", "Lithium", "rechargeable", 4)
-my_car_5.show_features()
+    my_car_5 = ElectricBike("suzuki", "MN-567", "Lithium", "rechargeable", 4)
+    my_car_5.show_features()

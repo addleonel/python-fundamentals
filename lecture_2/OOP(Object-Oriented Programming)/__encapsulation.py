@@ -31,13 +31,14 @@ class Convert:
         print(self.__value_message())
 
 
-person = Client()
-# print(person.__code)  # returns AttributeError: 'Client' object has no attribute '__code'
-print(person._Client__code)  # This is how the private attribute should be accessed
+if __name__ == '__main__':
+    person = Client()
+    # print(person.__code)  # returns AttributeError: 'Client' object has no attribute '__code'
+    print(person._Client__code)  # This is how the private attribute should be accessed
 
-num = Convert()  # self is the value of the instance
-print(num.convert_to_radian(30))
-print(num.convert_to_grades(1.45))
-num.print_value_message()
-# print(num.__value_message())  # returns AttributeError: 'Convert' object has no attribute '__value_message'
-print(num._Convert__value_message())  # This is how the private method should be accessed
+    num = Convert()  # self is the value of the instance
+    print(num.convert_to_radian(30))
+    print(num.convert_to_grades(1.45))
+    num.print_value_message()
+    # print(num.__value_message())  # returns AttributeError: 'Convert' object has no attribute '__value_message'
+    print(num._Convert__value_message())  # This is how the private method should be accessed

@@ -48,29 +48,29 @@ class Vector:
         return self.lenght() >= other.lenght()
 
 
-# out to the class
+if __name__ == '__main__':
+    # out to the class
 
-v1 = Vector(1, 3, 0)
-v2 = Vector(2, 5, 1)
-v3 = v1 + v2
-v4 = v3 + v2
-v5 = v3 - v4
-v6 = v5 * v4
+    v1 = Vector(1, 3, 0)
+    v2 = Vector(2, 5, 1)
+    v3 = v1 + v2
+    v4 = v3 + v2
+    v5 = v3 - v4
+    v6 = v5 * v4
 
-
-print('v1 =', v1)
-print('v2 =', v2)
-print('v3 =', v3)
-print('v4 =', v4)
-print('v5 =', v5)
-print('v6 =', v6)
-print("-"*50)
-print('|v1| = ', round(v1.lenght(), 2))
-print('|v2| =', round(v2.lenght(), 2))
-print("Results: ")
-print('|v1| < |v2| : {}'.format(v1 < v2))
-print('|v1| > |v2| : {}'.format(v1 > v2))
-print('|v1| <= |v2| : {}'.format(v1 <= v2))
-print('|v1| >= |v2| : {}'.format(v1 >= v2))
-print('|v1| != |v2| : {}'.format(v1 != v2))
-print('|v1| == |v2| : {}'.format(v1 == v2))
+    print('v1 =', v1)
+    print('v2 =', v2)
+    print('v3 =', v3)
+    print('v4 =', v4)
+    print('v5 =', v5)
+    print('v6 =', v6)
+    print("-"*50)
+    print('|v1| = ', round(v1.lenght(), 2))
+    print('|v2| =', round(v2.lenght(), 2))
+    print("Results: ")
+    print('|v1| < |v2| : {}'.format(v1 < v2))
+    print('|v1| > |v2| : {}'.format(v1 > v2))
+    print('|v1| <= |v2| : {}'.format(v1 <= v2))
+    print('|v1| >= |v2| : {}'.format(v1 >= v2))
+    print('|v1| != |v2| : {}'.format(v1 != v2))
+    print('|v1| == |v2| : {}'.format(v1 == v2))

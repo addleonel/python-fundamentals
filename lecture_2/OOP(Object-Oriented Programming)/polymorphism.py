@@ -33,30 +33,31 @@ class Truck:
         print('It displace with 8 wheels')
 
 
-# creating objects
-# running without a method
-myvehicle = Car()
-myvehicle.displacement()  # print 'It displaces with 4 wheels'
+if __name__ == '__main__':
+    # creating objects
+    # running without a method
+    myvehicle = Car()
+    myvehicle.displacement()  # print 'It displaces with 4 wheels'
 
-myvehicle2 = Motorcycle()
-myvehicle2.displacement()  # print 'It displace with 2 wheels'
+    myvehicle2 = Motorcycle()
+    myvehicle2.displacement()  # print 'It displace with 2 wheels'
 
-myvehicle3 = Truck()
-myvehicle3.displacement()  # print 'It displace with 8 wheels'
+    myvehicle3 = Truck()
+    myvehicle3.displacement()  # print 'It displace with 8 wheels'
 
-# running with other way: using a method
-myvehicle = Car()
-myvehicle2 = Motorcycle()
-myvehicle3 = Truck()
+    # running with other way: using a method
+    myvehicle = Car()
+    myvehicle2 = Motorcycle()
+    myvehicle3 = Truck()
 
-def displace(vehicle):
-    # calling the method that is the same in each classes
-    vehicle.displacement()
+    def displace(vehicle):
+        # calling the method that is the same in each classes
+        vehicle.displacement()
 
 
-displace(myvehicle)  # print 'It displaces with 4 wheels'
-displace(myvehicle2)  # print 'It displace with 2 wheels'
-displace(myvehicle3)  # print 'It displace with 8 wheels'
+    displace(myvehicle)  # print 'It displaces with 4 wheels'
+    displace(myvehicle2)  # print 'It displace with 2 wheels'
+    displace(myvehicle3)  # print 'It displace with 8 wheels'
 
 
 
