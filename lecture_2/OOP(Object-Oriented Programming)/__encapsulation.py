@@ -1,31 +1,35 @@
-
 # STRONGLY PRIVATE METHODS AND ATTRIBUTES USE "__" at the beginning of their name
 # KNOWN 'PRIVATE FIELD'
 # Private methods are those methods that should neither be accessed outside the class nor by any base class.
 
 import math
 
+
 class Client:
     __code = 4565
+
 
 class Convert:
 
     def __init__(self):
         # you can use on attributes.
-        self.__to_radian = math.pi/180
-        self.__to_grades = 180/math.pi
+        self.__to_radian = math.pi / 180
+        self.__to_grades = 180 / math.pi
 
     def convert_to_radian(self, value):
-        value_converted = value*self.__to_radian
+        value_converted = value * self.__to_radian
         return value_converted
-        
+
     def convert_to_grades(self, value):
-        value_converted = value*self.__to_grades
+        value_converted = value * self.__to_grades
         return value_converted
 
     # Also you can use on methods.
     def __value_message(self):
-        return "The values are radian convert = {} and grades convert = {}".format(self.__to_radian, self.__to_grades)
+        return 'The values are radian convert = {radian} and grades convert = {grades}'.format(
+                radian=self.__to_radian,
+                grades=self.__to_grades
+        )
 
     def print_value_message(self):
         print(self.__value_message())
