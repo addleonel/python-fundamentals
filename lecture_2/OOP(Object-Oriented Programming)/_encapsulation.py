@@ -17,15 +17,16 @@ class Convert:
 
     def convert_to_radian(self, value):
         value_converted = value*self._to_radian
-        self._printvalue(value_converted)
+        self._print_value(value_converted)
 
     def convert_to_grades(self, value):
         value_converted = value*self._to_grades
-        self._printvalue(value_converted)
+        self._print_value(value_converted)
 
     # you can use on method.
-    def _printvalue(self, value):
-        print("Result = {}".format(value))
+    @staticmethod
+    def _print_value(value):
+        print(f'Result = {value}')
 
 class Con(Convert):
     pass
@@ -41,9 +42,9 @@ if __name__ == '__main__':
     num.convert_to_radian(30)
     num.convert_to_grades(3.1416)
     # you can access to methods and attributes just with its name
-    num._printvalue(200)
+    num._print_value(200)
     print(num._to_radian)
     print(num._to_grades)
 
     c = Con()
-    c._printvalue(34)  # you can access methods and attributes from a subclass just in this module
+    c._print_value(34)  # you can access methods and attributes from a subclass just in this module
