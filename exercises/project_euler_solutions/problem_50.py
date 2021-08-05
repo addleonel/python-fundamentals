@@ -12,28 +12,51 @@ Which prime, below one-million, can be written as the sum of the most consecutiv
 """
 from exercises.project_euler_solutions.tools.prime_number import is_prime
 
-def evaluate_below_(number):
+def primes_below_to(limit):
     sum_ = 0
-    counter = 0
-    primes_with_longest_sum = {}
-    for k in range(2, number):
+    prime_numbers = []
+    for k in range(2, limit):
         if is_prime(k):
-            # print(k)
             sum_ += k
-            counter += 1
-            if is_prime(sum_):
-                # print(sum_, counter)
+            if sum_ > limit:
+                break
+            prime_numbers.append(k)
 
-                primes_with_longest_sum[counter] = sum_
-                # print(primes_with_longest_sum)
+    return prime_numbers
 
-    print(primes_with_longest_sum)
-    longest_sum_keyword = max(primes_with_longest_sum.keys())
+def from_beginning(primes_list):
+    collect = {}
+    arr = [*primes_list]
+    while True:
+        sum_arr = sum(arr)
+        if is_prime(sum_arr):
+            collect[sum_arr] = arr
+            break
+        arr.pop(0)
 
-    return primes_with_longest_sum[longest_sum_keyword]
+    arr = [*primes_list]
+    while True:
+        sum_arr = sum(arr)
+        if is_prime(sum_arr):
+            collect[sum_arr] = arr
+            break
+        arr.pop()
+    return collect
 
 
-print(evaluate_below_(1000))
+if __name__ == '__main__':
+    LIMIT = 1000000
+    primes = primes_below_to(LIMIT)
+    collect = from_beginning(primes)
+    correct_item = {}
+    arr_lengths = []
+    for value in collect.values():
+        arr_lengths.append(len(value))
+
+    for sum_, arr in collect.items():
+        if len(arr) == max(arr_lengths):
+            print(sum_, arr)
+
 
 
 
