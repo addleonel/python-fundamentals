@@ -47,15 +47,15 @@ def from_beginning(primes_list):
 if __name__ == '__main__':
     LIMIT = 1000000
     primes = primes_below_to(LIMIT)
-    collect = from_beginning(primes)
+    collection_ = from_beginning(primes)
     correct_item = {}
     arr_lengths = []
-    for value in collect.values():
+    for value in collection_.values():
         arr_lengths.append(len(value))
 
-    for sum_, arr in collect.items():
-        if len(arr) == max(arr_lengths):
-            print(sum_, arr)
+    for values_sum, values in collection_.items():
+        if len(values) == max(arr_lengths):
+            print(values_sum, values)
 
 
 
