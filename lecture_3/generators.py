@@ -1,4 +1,4 @@
-# I'm going to use the generators
+# I'm going to use the generators, the sugar syntax of the iterators
 
 # I'm going to create a generator
 
