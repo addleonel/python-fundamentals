@@ -20,5 +20,6 @@ def sum_three_numbers(a: float, b: float, c: float) -> float:
     return avg
 
 
-print(greeting())
-print(sum_three_numbers(23.3, 45.1, 9))
+if __name__ == "__main__":
+    print(greeting())
+    print(sum_three_numbers(23.3, 45.1, 9))
