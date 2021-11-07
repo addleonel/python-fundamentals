@@ -1,0 +1,2 @@
+#!/bin/sh
+echo HELLO WORLD FROM THE SHELL SCRIPT
