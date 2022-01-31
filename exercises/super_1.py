@@ -52,33 +52,18 @@ class Libro(Editorial, Author):
         print(Libro.__str__(self))
         
 
-libro_1 = Libro("Matematica", "Prohibida reproduccion parcial", 
+if __name__ == '__main__':
+    libro_1 = Libro("Matematica", "Prohibida reproduccion parcial",
                 "978-612-45216-2-1", 1000, "GEMAR", "AV. Rio Vilcanota 168. Ate. Lima 03",
                 "4466176", "rep_gemar09@hotmail.com", "J. Armando", "Venero", 65, 
                 "Matematico", "P.U.C.P")
-libro_2 = Libro("Matematica", "Prohibida reproduccion parcial", 
+    libro_2 = Libro("Matematica", "Prohibida reproduccion parcial",
                 "978-612-45216-2-1", 1000, "GEMAR", "AV. Rio Vilcanota 168. Ate. Lima 03",
                 "4466176", "rep_gemar09@hotmail.com", "J. Armando", "Venero", 65, 
                 "Matematico", "P.U.C.P")
 
-libro_1.info_book()
-print("-"*40)
-libro_1.info_book()
-print("-"*50)
-print(libro_2)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
+    libro_1.info_book()
+    print("-"*40)
+    libro_1.info_book()
+    print("-"*50)
+    print(libro_2)

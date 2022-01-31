@@ -15,23 +15,23 @@ def write_file(filename, data, header):
             fa.write(f'\n{data}')
 
 
-with open('data.txt', 'r') as f:
-  data = f.read();
+if __name__ == '__main__':
+    with open('data.txt', 'r') as f:
+      data = f.read();
 
-data_list = data.split('\n')
-count = 1
-for phrase in data_list:
-    if phrase != "":
-        words = phrase.split(',')
-        print(words)
-        name = words[0]
-        surname1 = words[1]
-        surname2 = words[2]
-        
-        write_file('name.txt', name, 'Names')
-        write_file('surname1.txt', surname1, 'Surname1')
-        write_file('surname2.txt', surname2, 'Surname2')
-        
-        print(f'writted {count}')
-        count += 1
-        
+    data_list = data.split('\n')
+    count = 1
+    for phrase in data_list:
+        if phrase != "":
+            words = phrase.split(',')
+            print(words)
+            name = words[0]
+            surname1 = words[1]
+            surname2 = words[2]
+
+            write_file('name.txt', name, 'Names')
+            write_file('surname1.txt', surname1, 'Surname1')
+            write_file('surname2.txt', surname2, 'Surname2')
+
+            print(f'writted {count}')
+            count += 1

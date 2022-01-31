@@ -1,5 +1,10 @@
-# I'm going to use Inheritance
+# I'm going to use Polymorphism
+
+
 class Vehicle:
+    """
+    base class called Vehicle
+    """
     def __init__(self, price, color):
         self.price = price
         self.color = color
@@ -16,6 +21,9 @@ class Vehicle:
 
 
 class Truck(Vehicle):
+    """
+    derived class named Truck
+    """
     def __init__(self, price, color, tires):
         super(Truck, self).__init__(price, color)
         self.tires = tires
@@ -23,7 +31,11 @@ class Truck(Vehicle):
     def beep(self):
         print("honk honk")
 
+
 class Car(Vehicle):
+    """
+    Derived class named Car
+    """
     def __init__(self, price, color, speed):
         super(Car, self).__init__(price, color)
         self.speed = speed
@@ -33,10 +45,14 @@ class Car(Vehicle):
 
 
 def do_beep(vehicle):
+    """
+    function to call beep method
+    """
     vehicle.beep()
 
 
-truck1 = Truck('2000', 'red', 'some')
-car1 = Car('4000', 'blue', 'some')
-do_beep(truck1)
-do_beep(car1)
+if __name__ == '__main__':
+    truck1 = Truck('2000', 'red', 'some')
+    car1 = Car('4000', 'blue', 'some')
+    do_beep(truck1)
+    do_beep(car1)

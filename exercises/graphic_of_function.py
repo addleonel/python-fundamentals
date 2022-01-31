@@ -9,7 +9,7 @@ def function(x):
 
 
 def gfunction():
-    x = np.array(range(-1000, 1000))
+    x = np.array(range(-2000, 2000))
     y = np.zeros(len(x))
     for i in range(len(x)):
         y[i] = function(x[i])
@@ -18,4 +18,5 @@ def gfunction():
     plt.show()
 
 
-gfunction()
+if __name__ == '__main__':
+    gfunction()

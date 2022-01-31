@@ -6,7 +6,7 @@ if __name__ == '__main__':
     x_values = [2, 4, 6, 8, 3]
     y_values = []
 
-    function = lambda x: x**2
+    function = (lambda x: x**2)
 
     for x in x_values:
         x_values.append(function(x))

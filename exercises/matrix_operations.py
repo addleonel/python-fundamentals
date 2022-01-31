@@ -1,4 +1,3 @@
-
 # Matrix Operations
 
 
@@ -18,7 +17,6 @@ def matrixAddition(m1, m2):
     return "The matrices don't have correct dimensions"
 
 
-
 def matrixSubtraction(m1, m2):
     result = []
     values = []
@@ -33,6 +31,7 @@ def matrixSubtraction(m1, m2):
             values = []
         return result
     return "The matrices don't have correct dimensions"
+
 
 def matrixMultiplication(m1, m2):
     result = []
@@ -49,12 +48,11 @@ def matrixMultiplication(m1, m2):
             values = []
         return result
     return "The matrices don't have correct dimensions"
-    
-                        
 
 
 def printLine():
     print("-"*50)
+
 
 if __name__ == '__main__':
     
@@ -87,8 +85,3 @@ if __name__ == '__main__':
         [3, 0, 1, 9],
     ]
     print(matrixMultiplication(m1, m2))
-        
-
-    
-
-

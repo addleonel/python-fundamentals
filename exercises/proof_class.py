@@ -34,25 +34,28 @@ class Computer:
             return "this program is perfect to your system"
 
     def view_properties(self):
-        print("This is all properties:\n"
-              " processor: {}\n".format(self.processor),
-              "Device's name: {}\n".format(self.name_device),
-              "RAM: {} GB\n".format(self.RAM),
-              "Identification: {}\n".format(self.identify_device),
-              "Type of system: {}\n".format(self.__type_system),
-              "Edition windows: {}\n".format(self.__edition),
-              "version windows: {}\n".format(self.version),
-              "date of installation: {}\n".format(self.date_installation),
-              "system operative's version: {}\n".format(self.__so_version),
-              "device's factory: {}\n".format(self.__fabricante)
-              )
+        print(
+            "This is all properties:\n"
+            "processor: {}\n".format(self.processor),
+            "Device's name: {}\n".format(self.name_device),
+            "RAM: {} GB\n".format(self.RAM),
+            "Identification: {}\n".format(self.identify_device),
+            "Type of system: {}\n".format(self.__type_system),
+            "Edition windows: {}\n".format(self.__edition),
+            "version windows: {}\n".format(self.version),
+            "date of installation: {}\n".format(self.date_installation),
+            "system operative's version: {}\n".format(self.__so_version),
+            "device's factory: {}\n".format(self.__fabricante)
+        )
 
-    # create a method encapsulate
+    # Create a method encapsulate
     def __method(self):
         print("this method is encapsulated")
 
-# outside of class called 'Computer'
-my_compu = Computer()
-my_compu.view_properties()
-yoursystem = int(input("type your RAM: "))
-print(my_compu.run_program(yoursystem))
+
+if __name__ == '__main__':
+    # outside of class called 'Computer'
+    my_compu = Computer()
+    my_compu.view_properties()
+    yoursystem = int(input("type your RAM: "))
+    print(my_compu.run_program(yoursystem))

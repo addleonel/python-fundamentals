@@ -32,11 +32,5 @@ def fibonacci(to_number):
         yield b
 
 
-fibonacci(30)
-
-
-
-    
-
-
-
+if __name__ == '__main__':
+    fibonacci(30)

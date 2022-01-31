@@ -1,11 +1,12 @@
-"""
-    Use 'suoer()' with simple inheritance and
-    if you want to use multiple inheritance call from the son class with a
-    instance of constructors from Father classes
+# Use 'super()' with simple inheritance and
+# if you want to use multiple inheritance call from the son class with a
+# instance of constructors from Father classes
 
-"""
 
 class Father:
+    """
+    First base class
+    """
     def __init__(self, cara, ojosazules, nariz, estatura):
         self.cara = cara
         self.ojosazules = ojosazules
@@ -26,6 +27,9 @@ class Father:
 
 
 class Mother:
+    """
+    second base class
+    """
     def __init__(self, caracter, color_cabello):
         self.caracter = caracter
         self.color_cabello = color_cabello
@@ -42,6 +46,10 @@ class Mother:
 
 
 class Son(Father, Mother):  # preference to Father
+    """
+    Derived class from Father and Mother
+    Son -> Father and Son -> mother (This behavior is multiple inheritance)
+    """
     def __init__(self, cara, ojosazules, nariz, estatura, caracter, color_cabello, arte):
         Father.__init__(self, cara, ojosazules, nariz, estatura)  # attribute from Father
         Mother.__init__(self, caracter, color_cabello)
@@ -52,7 +60,8 @@ class Son(Father, Mother):  # preference to Father
         print(" I am the son")
 
     def iam(self):  # this is a instance method because have 'self'
-        print("cara: {} \nojo: {} \nNariz: {} \nEstatura: {} \ncaracter : {} \ncabello: {} \narte: {}".format(
+        print("cara: {} \nojo: {} \nNariz: {} \nEstatura: {} \n"
+              "caracter : {} \ncabello: {} \narte: {}".format(
             self.cara,
             self.ojosazules,
             self.nariz,
@@ -64,6 +73,10 @@ class Son(Father, Mother):  # preference to Father
 
 
 class Daughter(Mother, Father):  # preference to Mother if create a 'super'
+    """
+    Derived class from Father and Mother
+    Daughter -> Father and Daughter -> Mother (This behavior is multiple inheritance)
+    """
     def __init__(self, cara, ojosazules, nariz, estatura, caracter, color_cabello, science):
         Mother.__init__(self, caracter, color_cabello)  # this the attribute from Mother
         Father.__init__(self, cara, ojosazules, nariz, estatura)
@@ -74,7 +87,8 @@ class Daughter(Mother, Father):  # preference to Mother if create a 'super'
         print("I am the Daughter")
 
     def iam(self):  # this is a instance method because have 'self'
-        print("cara: {} \nojo: {} \nNariz: {} \nEstatura: {} \ncaracter : {} \ncabello: {} \nscience: {}".format(
+        print("cara: {} \nojo: {} \nNariz: {} \nEstatura: {} \n"
+              "caracter : {} \ncabello: {} \nscience: {}".format(
             self.cara,
             self.ojosazules,
             self.nariz,
@@ -85,28 +99,44 @@ class Daughter(Mother, Father):  # preference to Mother if create a 'super'
         ))
 
 
-# out of class
-father = Father("cara de padre", "ojos de padre", "nariz de padre", "estatura de padre")
-father.my_description()
-father.iam()
+if __name__ == '__main__':
+    # out of class
+    father = Father(
+        "cara de padre",
+        "ojos de padre",
+        "nariz de padre",
+        "estatura de padre")
+    father.my_description()
+    father.iam()
 
-print("-"*40)
+    print("-"*40)
 
-mother = Mother("caracter de madre", "brown")
-mother.my_description()
-mother.iam()
+    mother = Mother("caracter de madre", "brown")
+    mother.my_description()
+    mother.iam()
 
-print("-"*40)
+    print("-"*40)
 
-son = Son("cara de hijo", "ojo de hijo", "nariz de hijo", "estatura de hijo", "caracter de hijo", "cabello de hijo",
-          "Me gusta la Pintura")
-son.my_description()
-son.iam()
+    son = Son(
+        "cara de hijo",
+        "ojo de hijo",
+        "nariz de hijo",
+        "estatura de hijo",
+        "caracter de hijo",
+        "cabello de hijo",
+        "Me gusta la Pintura")
+    son.my_description()
+    son.iam()
 
-print("-"*40)
+    print("-"*40)
 
-daughter = Daughter("cara de hija", "ojo de hija", "nariz de hija", "estatura de hija", "caracter de hija",
-                    "cabello de hija",
-                    "Me gusta la ciencia")
-daughter.my_description()
-daughter.iam()
+    daughter = Daughter(
+        "cara de hija",
+        "ojo de hija",
+        "nariz de hija",
+        "estatura de hija",
+        "caracter de hija",
+        "cabello de hija",
+        "Me gusta la ciencia")
+    daughter.my_description()
+    daughter.iam()

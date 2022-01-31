@@ -28,9 +28,10 @@ def speak(text):
 #    return said
 
 
-# text = get_audio()
+if __name__ == '__main__':
+    # text = get_audio()
 
-# if "hello"    in text:
-speak("hola, aldo está desesperado")
-# if "aldo" in text:
+    # if "hello"    in text:
+    speak("hola, aldo está desesperado")
+    # if "aldo" in text:
 

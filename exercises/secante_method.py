@@ -24,5 +24,6 @@ def function(x):
     return f
 
 
-# RESULT
-secant_METHOD(2, 5)
+if __name__ == '__main__':
+    # RESULT
+    secant_METHOD(2, 5)

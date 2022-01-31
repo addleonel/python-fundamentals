@@ -27,7 +27,7 @@ def principalOperations():
         print(math.e)
         
 
-#print lines that you want 
+# print lines that you want
 def printLine(num):
         iterator =0
         print()
@@ -61,28 +61,11 @@ def printList():
 def fibonacciSeriesSetting():
         num = int(input("print a number to print the fibonacci number: "))
         fibonacciSeries_2(num)
-        
-#the results
-fibonacciSeries_1()
-printLine(40)
-printList()
-printLine(60)
-fibonacciSeriesSetting()
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    # the results
+    fibonacciSeries_1()
+    printLine(40)
+    printList()
+    printLine(60)
+    fibonacciSeriesSetting()

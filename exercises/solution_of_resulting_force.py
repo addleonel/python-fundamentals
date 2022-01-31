@@ -121,12 +121,13 @@ def electricFCD():
     print("  ", list_RESULT_VECTOR_SUM_TOTAL_MODULO)
 
 
-# PRINT RESULT
+if __name__ == '__main__':
+    # PRINT RESULT
 
-# electricFCD()
-welcome()
-# result_TOTAL =0
-# k=12
-# e_0 = 8.8541878176 * math.pow(10, -12)
-# result_TOTAL =  k*9*math.pow(10,9)
-# print(result_TOTAL)
+    # electricFCD()
+    welcome()
+    # result_TOTAL =0
+    # k=12
+    # e_0 = 8.8541878176 * math.pow(10, -12)
+    # result_TOTAL =  k*9*math.pow(10,9)
+    # print(result_TOTAL)

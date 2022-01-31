@@ -307,11 +307,11 @@ def make_matrix(vectors, elements):
     return np.array(mx)
     
     
-    
-options()
-# triple_vector_product()
-#scalar_product_two_vectors()
-# print(math.acos(3/5)*180/math.pi)
+if __name__ == '__main__':
+    options()
+    # triple_vector_product()
+    # scalar_product_two_vectors()
+    # print(math.acos(3/5)*180/math.pi)
 
 
 

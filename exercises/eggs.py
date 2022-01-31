@@ -1,5 +1,5 @@
 # I'm going to solve a exercise called 'huevos a la copa'
-# from fundamentals.Class_3_MoreControlFlowTools.lambdaFunction import validation_NUMBER as vn
+
 import math
 
 
@@ -12,7 +12,7 @@ def vn(message):
             print("just number, try again")
 
 
-def stringvalidation(message):
+def string_validation(message):
     while True:
         text = input(message)
         if text in ("s", "y", "n", "yes", "yeah", "no", "yep", "nop", "not", "si"):
@@ -22,7 +22,7 @@ def stringvalidation(message):
             continue
 
 
-def solvetheexercise():
+def solve_exercise():
     T_0 = vn("type the original temperature: ")
     M = 47
     c = 3.7
@@ -47,56 +47,19 @@ def solvetheexercise():
     print(hour, "in hour")
 
 
-def general():
+def run():
     # run the program
-    solvetheexercise()
+    solve_exercise()
     # ask if they want to use again
     while True:
-        question = stringvalidation("Do you want to use the program again?(s/n): ")
+        question = string_validation("Do you want to use the program again?(s/n): ")
         if question in ("y", "yes", "yep", "yeah", "s", "si"):
             print("HELLO AGAIN")
-            solvetheexercise()
+            solve_exercise()
         elif question in ("n", "no", "not", "nop"):
             print("GOOD BYE, HAVE A NICE DAY")
             break
 
 
-# travel time
-def traveltime():
-    time = []
-    while True:
-        minutes = vn("Duracion del tramo en minutos:")
-        time.append(minutes)
-        if minutes == 0:
-            break
-    stime = math.fsum(time)
-    # separa la parte decimal
-    decimal, integer = math.modf(stime)
-    hour = integer // 60
-    minute_1 = integer % 60
-    seconds = decimal * 60
-    dsecond, isecond = math.modf(seconds)
-    print(hour, "h:", minute_1, "m:", isecond, "s    aprox second")
-
-# calculate the pi value
-def pivalue():
-    cantidad = int(input("type the number of value: "))
-    sum = 0
-    for k in range(1,cantidad+1):
-        r = math.pow(-1, k+1)/(2*k-1)
-        sum = sum + r
-    print(4*sum)
-
-
-# calculate the 'e' value
-def evalue():
-    e = 0
-    m = int(input("type the number of values: "))
-    for k in range(m):
-        e = e + (1/math.factorial(k))
-    print(e)
-
-# general()
-# traveltime()
-pivalue()
-evalue()
+if __name__ == '__main__':
+    run()

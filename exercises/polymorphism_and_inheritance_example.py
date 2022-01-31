@@ -83,23 +83,11 @@ class UnderdevelopedCountry(Country):
         - Puede tener inestabilidad política y desigualdad social.
         """)
 
-    
-# create objects   
-country1 = DevelopedCountry('United State', 'English', 'America', '327.2 millones (2018)')
-country2 = UnderdevelopedCountry('Chad', 'Chad', 'Africa Central', '14.9 millones (2017)')
-# country3 = DevelopedCountry()
-# country4 = DevelopedCountry()
-# country5 = DevelopedCountry()
 
-# create a list for print each objects
-list_country = [country1, country2]
-for country in list_country:
-    print(country)
-    print('='*40)
-    print('There are {} countries'.format(len(list_country)))
-
-# using a function for print
 def description(to_country):
+    """
+    using a function for print
+    """
     tc = to_country
     print(tc)
     print('Description:')
@@ -112,21 +100,19 @@ def description(to_country):
     print('      > Caracteristicas:')
     tc.feature()
 
-# run description of countries
-# description(country1)
-# description(country2)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+if __name__ == '__main__':
+    # create objects
+    country1 = DevelopedCountry('United State', 'English', 'America', '327.2 millones (2018)')
+    country2 = UnderdevelopedCountry('Chad', 'Chad', 'Africa Central', '14.9 millones (2017)')
+
+    # create a list for print each objects
+    list_country = [country1, country2]
+    for country in list_country:
+        print(country)
+        print('=' * 40)
+    print('There are {} countries'.format(len(list_country)))
+
+    # run description of countries
+    description(country1)
+    description(country2)

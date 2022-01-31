@@ -1,10 +1,11 @@
-# In this module I'm going to solve the bisection method
-
 import math
 
-# x_a and x_b are intervals
 
 def fpMETHOD(x_a, x_b):
+    """
+    In this module I'm going to solve the bisection method
+    x_a and x_b are intervals
+    """
     i = 0
     x_r_before = 0
     while True:
@@ -31,10 +32,9 @@ def fpMETHOD(x_a, x_b):
 
 
 def function(x):
-    f = (math.pi * (1 - math.exp(-x)) / x) - 0.5
-    # print(f)
-    return f
+    return (math.pi * (1 - math.exp(-x)) / x) - 0.5
 
 
-# RESULT
-fpMETHOD(5, 7)
+if __name__ == '__main__':
+    # RESULT
+    fpMETHOD(5, 7)

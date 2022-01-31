@@ -1,5 +1,4 @@
 def balanced(expression):
-    #your code goes here
     stack_list = []
     for letter in expression:
         if letter == '(':
@@ -13,4 +12,6 @@ def balanced(expression):
         return False
     return True
 
-print(balanced(input()))
+
+if __name__ == '__main__':
+    print(balanced(input()))
